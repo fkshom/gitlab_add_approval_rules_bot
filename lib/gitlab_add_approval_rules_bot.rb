@@ -8,7 +8,7 @@ require "dotenv"
 Dotenv.load
 
 Gitlab.configure do |config|
-  config.endpoint       = ENV['GITLAB_ENDPOINT']
+  config.endpoint       = ENV['GITLAB_ENDPOINT'] or ENV['CI_API_V4_URL']
   config.private_token  = ENV['GITLAB_TOKEN']
 end
 
