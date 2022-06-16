@@ -3,10 +3,6 @@ global:
 rules:
 - name: rule1
   approvals_required: 1
-  usernames:
-  - user1
-  groupnames:
-  - group1
   user_ids:
   - 1
   group_ids:
