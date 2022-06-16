@@ -3,6 +3,7 @@
 require_relative "gitlab_add_approval_rules_bot/version"
 require "gitlab"
 require "yaml"
+require "thor"
 require "dotenv"
 Dotenv.load
 
