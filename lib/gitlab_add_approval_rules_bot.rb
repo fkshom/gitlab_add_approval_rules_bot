@@ -68,6 +68,16 @@ module GitlabAddApprovalRulesBot
         if options[:dry_run]
           puts "THIS IS DRY RUN MODE!!"
         else
+          if project_id.nil?
+            puts "project_id is nil"
+            puts "exit"
+            return
+          end
+          if merge_request_iid.nil?
+            puts "merge_request_iid is nil"
+            puts "exit"
+            return
+          end
           Gitlab.create_merge_request_level_rule(project_id, merge_request_iid, rule_options)
         end
       end
