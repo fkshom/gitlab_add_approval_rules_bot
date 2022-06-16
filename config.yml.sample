@@ -1,0 +1,23 @@
+global:
+  stop_when_error: true
+rules:
+- name: rule1
+  approvals_required: 1
+  usernames:
+  - user1
+  groupnames:
+  - group1
+  user_ids:
+  - 1
+  group_ids:
+  - 1
+- name: rule2
+  approvals_required: 1
+  usernames:
+  - user2
+  groupnames:
+  - group2
+  user_ids:
+  - 2
+  group_ids:
+  - 2
