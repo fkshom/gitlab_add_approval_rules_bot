@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+require 'gitlab_add_approval_rules_bot'
+
+GitlabAddApprovalRulesBot::CLI.start(ARGV)
+exit
